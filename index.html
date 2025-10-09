@@ -9,8 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         body {
-            background:  linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.622)),
-        url(0ff76k4cjhj91.png);
+            background-image: url(0ff76k4cjhj91.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -19,16 +18,18 @@
 
         @media (max-width: 576px) {
             body {
-                background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(mobile.png);
-                background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-                
+                background-image: url(f/mobile.png);
             }
 
         }
+           .d-grid a.btn:nth-child(1):hover {
+        background-color: #fd59ef !important; /* cor para "Ler em nova aba" */
+        color: #fff !important;
+    }
+
+    .d-grid a.btn:nth-child(2):hover {
+        background-color: #7d07b4 !important; /* cor para "Baixar PDF" */
+        color: #fff !important;
     </style>
 </head>
 
@@ -42,9 +43,9 @@
                 
                 <div class="d-grid gap-2">
     <a href="arquivo.pdf" class="btn btn-primary d-flex justify-content-center align-items-center"
-        style="background-color: rgb(195, 155, 221);" target="_blank">Ler em nova aba</a>
+        style="background-color: rgb(224, 124, 242);" target="_blank">Ler em nova aba</a>
     <a href="arquivo.pdf" download class="btn btn-primary d-flex justify-content-center align-items-center"
-        style="background-color: rgb(192, 121, 240);">Baixar PDF</a>
+        style="background-color: rgb(160, 117, 225); ">Baixar PDF</a>
 </div>
 <p style="font-size: small;">Em caso de falhas, entre em contato com o suporte da Tata.</p>
               
